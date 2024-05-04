@@ -1,11 +1,16 @@
 .videoSidebar{
     position: absolute;
-    top: 50%;
-    right: 10px;
+    /* top: 50%; */
+    top: 43%;
+    right: 15px;
     color: white;
+    /* transform: translateY(-50%); */
 }
 
 .videoSidebar__button{
-    padding: 20px;
+    padding: 11px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -6,8 +6,9 @@ const shortVideoSchema = mongoose.Schema({
     description: String,
     song: String,
     likes: String,
+    dislikes: String, //Added new field for dislikes
     shares: String,
-    messages: String
+    messages: String,
 })
 
 export default mongoose.model('shortVideos', shortVideoSchema)

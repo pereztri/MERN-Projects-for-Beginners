@@ -2,10 +2,12 @@ import express from 'express'
 import mongoose from 'mongoose'
 import Cors from 'cors'
 import Videos from './dbModel.js'
+
 //App Config
 const app = express()
 const port = process.env.PORT || 9000
-const connection_url = 'mongodb+srv://admin:KLqXZIZn6t6WuZhG@cluster0.ryj4g.mongodb.net/shortVideoDB?retryWrites=true&w=majority'
+// const connection_url = 'mongodb+srv://admin:KLqXZIZn6t6WuZhG@cluster0.ryj4g.mongodb.net/shortVideoDB?retryWrites=true&w=majority'
+const connection_url = 'mongodb+srv://tristenperez:MERN@csci3916shortvideoappme.ndioahm.mongodb.net/CSCI3916ShortVideoAppMern?retryWrites=true&w=majority&appName=CSCI3916ShortVideoAppMern'
 
 //Middleware
 app.use(express.json())
@@ -40,5 +42,7 @@ app.get('/v2/posts', (req, res) => {
         }
     })
 })
+
+
 //Listener
 app.listen(port, () => console.log(`Listening on localhost: ${port}`))
