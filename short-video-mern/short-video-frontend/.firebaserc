@@ -1,5 +1,9 @@
 {
   "projects": {
-    "default": "short-video-mern"
-  }
+    "default": "short-video-app-mern-ccd46",
+    "short-video-backend-mern": "short-video-app-mern-ccd46"
+  },
+  "targets": {},
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
 }
